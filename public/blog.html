@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+   
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon_2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon_2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon_2/favicon-16x16.png">
+    <link rel="manifest" href="./src/images/favicon_2/site.webmanifest">
+    <link rel="mask-icon" href="./src/images/favicon_2/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+            a{
+    text-decoration: none;
+}
+
+.read_more{
+    text-decoration: underline;
+}
+
+.read_more:hover{
+    color: magenta;
+    transform: scale(1.01);
+    transition-duration: 200ms;
+}
+.body_container{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container{
+    max-width: 80%;
+    padding: 2rem 1rem;
+    margin: 10% 5% 10% 5%;
+    
+}
+
+.header_container{
+    margin-bottom: 2.8rem;
+}
+
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header_desc{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+}
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width:935px) {
+    .main_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1380px) {
+    .main_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width:1870px) {
+    .main_container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(233, 224, 224);
+    border-radius: 8px;
+}
+
+.card_image_container{
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+}
+
+
+@media (min-width: 768px) {
+    .card_image_container{
+            height: 12rem;
+    }
+}
+
+.card_image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.card_title_container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card_container:hover .card_image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(25, 23, 23);
+}
+
+
+.card_title_anchor:hover .card_title{
+    color:rgb(67, 67, 191);
+}
+
+
+.card_desc{
+    color: rgb(113, 107, 107);
+    font-size: 1rem;
+}
+
+.card_footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.author_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author_avatar_container{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 50%;
+    background-color: rgb(243, 239, 239);
+}
+
+.author_info_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.author_name{
+    color: rgb(38, 38, 149);
+}
+
+.author_date{
+    color: rgb(136, 126, 126);
+}
+
+.card_tag_container{
+    font-size: 0.79rem;
+    border: 1px solid rgb(76, 71, 71);
+    border-radius: 4px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: grey;
+}
+
+    </style>
+
+</head>
+<body>
+     <!-- header section starts-->
+
+     <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <a href="./Services.html" target="blank">Services</a>
+                    <div class="dropdown-content">
+                        <a href="./airline.html">Flight Tickets</a>
+                        <a href="./carrental.html">Car Rental</a>
+                        <a href="./hotelbook.html">Hotel Booking</a>
+                        <a href="./travelinsurance.html">Travel Insurance</a>
+                        <a href="./holidpackage.html">Holiday Package</a>
+                        <a href="./cruise.html">Cruise Package</a>
+                        <a href="./visamanage.html">Visa Management</a>
+                        <a href="./forex.html">Forex Management</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./About.html" target="blank">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="./leadership Team.html">Our Leadership</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="active" href="./blog.html" target="blank">Blog</a>
+                    <!-- <div class="dropdown-content">
+                        <a href="#">Testimonials</a>
+                    </div> -->
+                </li>
+                <li><a href="./Contactus.html" target="blank">Contact Us</a></li>
+                
+            </ul>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- header section ends -->
+
+      <!-- about us image starts -->
+      <div id="blog_image">
+        <img src="./src/images/Blog BG.png" alt="">
+        
+        <div id="textblog"><h2>News, Tips & Guides</h2>
+        
+        </div>
+    </div>
+    <!-- about us image ends -->
+
+<!-- Blog post Starts -->
+
+<div class="body_container">
+
+    <div class="container">
+        <header class="header_container">
+            
+           
+        </header>
+
+        <main class="main_container">
+          
+        <table>
+            <!-- card 1 start -->
+            <tr>
+            <div class="card_container">
+                <div class="card_image_container">
+                    <img src="./src/images/featured images(Saudi arabia).jpg" alt="Saudi Arabia" class="card_image" loading="lazy"/>
+                </div>
+                
+
+                <div class="card_title_container">
+                    
+                        <h2 class="card_title">Places to Visit in Saudi Arabia</h2>
+                    
+                    <p class="card_desc">
+                        Discover the stunning places to visit in Saudi Arabia,including arabian  deserts,buildings, and luxury resorts.
+                    </p>
+
+                </div>
+            </div>
+            </tr>
+            <!-- card 1 end -->
+
+            <!-- cards 2 starts -->
+            <tr>
+                <div class="card_container">
+                    <div class="card_image_container">
+                        <img src="./src/images/featured image (Maldives).jpg" alt="maldives" class="card_image" loading="lazy"/>
+                    </div>
+                    
+    
+                    <div class="card_title_container">
+                        
+                            <h2 class="card_title">Places to Visit in Maldives</h2>
+                        
+                        <p class="card_desc">
+                            Discover the stunning places to visit in Maldives, including pristine beaches, vibrant coral reefs, and luxury resorts with our travel agency.
+                        </p>
+    
+                    </div>
+                </div>
+                </tr>
+            <!-- cards 2 ends -->
+
+            <!-- cards 3 starts -->
+            <tr>
+                <tr>
+                    <div class="card_container">
+                        <div class="card_image_container">
+                            <img src="./src/images/featured image(China).jpg" alt="china" class="card_image" loading="lazy"/>
+                        </div>
+                        
+        
+                        <div class="card_title_container">
+                            
+                                <h2 class="card_title">Places to Visit in China</h2>
+                            
+                            <p class="card_desc">
+                                Explore China, a land of ancient wonders and modern marvels, offers an unparalleled journey through time and culture.
+                            </p>
+        
+                        </div>
+                    </div>
+                    </tr>
+            </tr>
+            <!-- cards 3 ends -->
+
+            <!-- cards 4 starts -->
+
+            <tr>
+                <div class="card_container">
+                    <div class="card_image_container">
+                        <img src="./src/images/featured image(Indonesia).jpg" alt="indonesia" class="card_image" loading="lazy"/>
+                    </div>
+                    
+    
+                    <div class="card_title_container">
+                        
+                            <h2 class="card_title">Places to Visit in Indonesia</h2>
+                        
+                        <p class="card_desc">
+                            Discover the stunning places to visit in indonesia, including pristine beaches, vibrant coral reefs, and luxury resorts with our travel agency.
+                        </p>
+    
+                    </div>
+                </div>
+                </tr>
+
+            <!-- cards 4 ends -->
+
+            <!-- cards 5 starts -->
+
+            <tr>
+                <div class="card_container">
+                    <div class="card_image_container">
+                        <img src="./src/images/featured image(Morocco).jpg" alt="Morocco" class="card_image" loading="lazy"/>
+                    </div>
+                    
+    
+                    <div class="card_title_container">
+                        
+                            <h2 class="card_title">Places to Visit in Morocco</h2>
+                        
+                        <p class="card_desc">
+                            Discover top places to visit in Morocco: Marrakech, Fes, Sahara Desert, and more. Plan your perfect Moroccan adventure today!
+                        </p>
+    
+                    </div>
+                </div>
+                </tr>
+            <!-- cards 5 ends -->
+            
+            <!-- cards 6 starts -->
+            <tr>
+                <div class="card_container">
+                    <div class="card_image_container">
+                        <img src="./src/images/featured image(Nepal).jpg" alt="Nepal" class="card_image" loading="lazy"/>
+                    </div>
+                    
+    
+                    <div class="card_title_container">
+                        
+                            <h2 class="card_title">Places to Visit in Nepal</h2>
+                        
+                        <p class="card_desc">
+                            Nepal, a land of towering peaks, ancient temples, and vibrant culture, offers an unparalleled travel experience.
+                        </p>
+    
+                    </div>
+                </div>
+                </tr>
+
+            <!-- cards 6 ends -->
+
+             <!-- cards 7 starts -->
+
+             <tr>
+                <div class="card_container">
+                    <div class="card_image_container">
+                        <img src="./src/images/featured image(singapore).jpg" alt="Singapore" class="card_image" loading="lazy"/>
+                    </div>
+                    
+    
+                    <div class="card_title_container">
+                        
+                            <h2 class="card_title">Places to Visit in Singapore</h2>
+                        
+                        <p class="card_desc">
+                            Let's embarks on a Journey to Visit the Top 10 best places to visit in Singapore, a dynamic city-state with one of the best travel agency.
+                        </p>
+    
+                    </div>
+                </div>
+                </tr>
+
+            <!-- cards 7 ends -->
+
+            <!-- cards 8 starts -->
+
+            <tr>
+                <div class="card_container">
+                    <div class="card_image_container">
+                        <img src="./src/images/featured image(Turkey).jpg" alt="Turkey" class="card_image" loading="lazy"/>
+                    </div>
+                    
+    
+                    <div class="card_title_container">
+                        
+                            <h2 class="card_title">Places to Visit in Turkey</h2>
+                        
+                        <p class="card_desc">
+                            Discover the best places to visit in Turkey: Istanbul, Cappadocia, Pamukkale, and more. Plan your perfect Turkish adventure today!
+                        </p>
+    
+                    </div>
+                </div>
+                </tr>
+            <!-- cards 8 ends -->
+            
+            <!-- cards 9 starts -->
+           <tr>
+            <div class="card_container">
+                <div class="card_image_container">
+                    <img src="./src/images/Featured image(Japan).jpg" alt="Japan" class="card_image" loading="lazy"/>
+                </div>
+                
+
+                <div class="card_title_container">
+                    
+                        <h2 class="card_title">Places to Visit in Japan</h2>
+                    
+                    <p class="card_desc">
+                        Welcome to Japan, a land of rich cultural heritage, stunning landscapes, and vibrant cities. Discover the places to visit in Japan.
+                    </p>
+
+                </div>
+            </div>
+            </tr>
+
+            <!-- cards 9 ends -->
+        </table>
+        </main>
+    </div>
+
+    </table>
+
+    </div>
+
+<!-- Blog Post Ends -->
+
+
+
+
+
+<!-- Footer section starts -->
+<footer>
+    <div class="col">
+        <a href="./index.html"><img class="logo" src="./src/images/latest_logo_of_sharda-removebg-preview.png" alt="logo" height="80px"></a>
+        <h4>Connect With Sharda Travel</h4>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Home Office Address:</strong> Marcory Zone 4 Rue du Canal 10 BP 3473 ABIDJAN 10</p>
+        <p><i class="fas fa-phone fa-rotate-90"></i> <strong>Phone:</strong> (+225)0719887362 / (+91) 9587532127</p>
+        <p><i class="fas fa-envelope"></i> <strong>Mail Us:</strong> salesabj@shardatravel.com</p>
+    </div>
+    <div class="follow col">
+        <h4>Connect With Sharda Travel</h4>
+        <div class="icon">
+            <a href="https://www.instagram.com/shardatravelabj?igsh=MWFmdjNia2hpOHRtdg==" target="_blank"><i class="fab fa-instagram" style="color:pink;"></i>Instagram</a>
+            <a href="https://wa.me/+2250719887362" target="_blank"><i class="fab fa-whatsapp" style="color:green;"></i>Whatsapp</a>
+            <a href="https://www.facebook.com/profile.php?id=61562710124378&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook" style="color:Blue;"></i>Facebook</a>
+            <!-- <a href="" target="_blank"><i class="fa-brands fa-twitter" style="color:Blue;"></i>Twitter</a> -->
+        </div>
+    </div>
+    <div class="col">
+        <h4>Useful Links</h4>
+        <a href="./index.html">Home</a>
+        <a href="./About.html">About Us</a>
+        <a href="./Contactus.html">Contact Us</a>
+        <a href="./leadership Team.html">Leadership Team</a>
+        <a href="./Services.html">Services</a>
+        <a href="./blog.html">Blog</a>
+    </div>
+    <div class="copyright">
+        <p>All rights reserved. © Sharda travel @ 2024</p>
+    </div>
+</footer>
+
+<script src="../src/Utils/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />   
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon_2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon_2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon_2/favicon-16x16.png">
+    <link rel="manifest" href="./src/images/favicon_2/site.webmanifest">
+    <link rel="mask-icon" href="./src/images/favicon_2/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        body{
+            background-color: #fbfcf8;
+        }
+        .button{
+            background-color: biege;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px;
+        }
+
+        button{
+            margin: 20px;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 30px;
+
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+                background-color: skyblue;
+            }
+           
+        }
+        a{
+    
+            color: #fff;
+        }
+
+        /* Base styles for all devices */
+ /* Smartphones (portrait and landscape) */
+ @media only screen and (max-width: 376px) {
+            .container0{
+                margin: 200px 0 600px 0;
+                
+            }
+        
+            .container{
+                margin-top: 450px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 70%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -130px;
+            }
+           
+        }
+        
+        @media only screen and (min-width: 377px) and (max-width: 500px){
+            .container0{
+                margin: 100px 0 350px 0;
+                
+            }
+        
+            .container{
+                margin-top: 400px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 50%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -150px;
+            }
+
+            .button{
+                margin-top: 500px;
+            }
+        }
+        
+        @media only screen and (min-width: 501px) and (max-width: 800px){
+            .container0{
+                margin: 50px 0 250px 0;
+                
+            }
+        
+            .container{
+                margin-top: 500px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 50%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -80px;
+            }
+            .button{
+                margin-top: 500px;
+            }
+        }
+        
+        @media only screen and (min-width: 801px) {
+            .container0{
+                margin: 10px 0 70px 0;
+                
+            }
+        
+            
+        
+            
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus{
+                display: flex;
+                justify-content: center;
+                align-items:baseline;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    
+            <!-- header and hero section starts-->
+            <header>
+                <div class="logo">
+                    <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
+                </div>
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li>
+                            <a href="./Services.html" target="blank">Services</a>
+                            <div class="dropdown-content">
+                                <a href="./airline.html">Flight Tickets</a>
+                                <a href="./carrental.html">Car Rental</a>
+                                <a href="./hotelbook.html">Hotel Booking</a>
+                                <a href="./travelinsurance.html">Travel Insurance</a>
+                                <a href="./holidpackage.html">Holiday Package</a>
+                                <a href="./cruise.html">Cruise Package</a>
+                                <a href="./visamanage.html">Visa Management</a>
+                                <a href="./forex.html">Forex Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="active" href="./About.html" target="blank">About Us</a>
+                            <div class="dropdown-content">
+                                <a href="./leadership Team.html">Our Leadership</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./blog.html" target="blank">Blog</a>
+                            <!-- <div class="dropdown-content">
+                                <a href="#">Testimonials</a>
+                            </div> -->
+                        </li>
+                        <li><a href="./Contactus.html" target="blank">Contact Us</a></li>
+                        
+                    </ul>
+                    <button class="nav-toggle" aria-label="toggle navigation">
+                        <span class="hamburger"></span>
+                    </button>
+                </nav>
+            </header>
+        
+        
+
+       
+    <!-- header section ends -->
+
+    <!-- about us image starts -->
+    <div id="about_image">
+        <img src="./src/images/about us BG.png" alt="">
+    </div>
+    <div id="textaboutus">
+        <h2># Know Us</h2>
+        
+        <a href="./Contactus.html"><button id="explorebutton">Explore</button></a>
+    </div>
+    
+    
+    
+
+    <!-- about us image ends -->
+
+    <!-- about us section starts-->
+    <div class="container0">
+        <div class="container">
+            <div class="left-side">
+                <img src="./src/images/about us image.jpg" alt="Image" class="responsive-image">
+            </div>
+            <div class="right-side">
+                <h2>Welcome to <span>SHARDA TRAVEL</span></h2>
+                <h3>Your Premier Tour Operator in Africa</h3>
+                <p>At Sharda Travel, we take pride in being a leading tour operator in Africa, offering unparalleled world tour packages and travel services across the globe. </p>
+                <p>Renowned for our commitment to quality and personalized experiences, Sharda Travel has established itself as a trusted name in the travel industry.</p>
+                <p>Sharda Travel and Tour Company understands that every client is unique, offering tailored travel management programs for both corporate and personal preferences. Our mission is to ensure your travel experience is seamless and aligned with your specific needs.</p>
+                <p>Navigating today's complex travel landscape is challenging. Sharda Travel and Tour Company meets these demands with expertise, providing a dedicated account manager, transparent pricing, and tailored services.</p>
+                <p>With us, you can be confident that your business is optimizing cost savings, meeting targets, and ensuring the safety of your employees. Explore the world with Sharda Travel and , where every journey is crafted to perfection.</p>
+                <button id="contact_button"><a href="./Contactus.html">Contact Us</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about us section ends -->
+
+    <div class="button"><button><a href="./leadership Team.html">Know Our Leadership Team</a></button></div>
+
+   <!-- Footer section starts -->
+   <footer>
+    <div class="col">
+        <a href="./index.html"><img class="logo" src="./src/images/latest_logo_of_sharda-removebg-preview.png" alt="logo" height="80px"></a>
+        <h4>Connect With Sharda Travel</h4>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Home Office Address:</strong> Marcory Zone 4 Rue du Canal 10 BP 3473 ABIDJAN 10</p>
+        <p><i class="fas fa-phone fa-rotate-90"></i> <strong>Phone:</strong> (+225)0719887362 / (+91) 9587532127</p>
+        <p><i class="fas fa-envelope"></i> <strong>Mail Us:</strong> salesabj@shardatravel.com</p>
+    </div>
+    <div class="follow col">
+        <h4>Connect With Sharda Travel</h4>
+        <div class="icon">
+            <a href="https://www.instagram.com/shardatravelabj?igsh=MWFmdjNia2hpOHRtdg==" target="_blank"><i class="fab fa-instagram" style="color:pink;"></i>Instagram</a>
+            <a href="https://wa.me/+2250719887362" target="_blank"><i class="fab fa-whatsapp" style="color:green;"></i>Whatsapp</a>
+            <a href="https://www.facebook.com/profile.php?id=61562710124378&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook" style="color:Blue;"></i>Facebook</a>
+            <!-- <a href="" target="_blank"><i class="fa-brands fa-twitter" style="color:Blue;"></i>Twitter</a> -->
+        </div>
+    </div>
+    <div class="col">
+        <h4>Useful Links</h4>
+        <a href="./index.html">Home</a>
+        <a href="./About.html">About Us</a>
+        <a href="./Contactus.html">Contact Us</a>
+        <a href="./leadership Team.html">Leadership Team</a>
+        <a href="./Services.html">Services</a>
+        <a href="./blog.html">Blog</a>
+    </div>
+    <div class="copyright">
+        <p>All rights reserved. © Sharda travel @ 2024</p>
+    </div>
+</footer>
+
+    <script src="../src/Utils/script.js"></script>
+</body>
+</html>

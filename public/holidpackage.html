@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Packages</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon_2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon_2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon_2/favicon-16x16.png">
+    <link rel="manifest" href="./src/images/favicon_2/site.webmanifest">
+    <link rel="mask-icon" href="./src/images/favicon_2/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        body{
+            background-color: #fbfcf8;
+        }
+            
+                #about_image{
+            position: relative;
+        }
+        
+        #about_image img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.85;
+            display:block;
+            
+        }
+        
+        #textaboutus{
+            position: absolute;
+            top: 25%; /* Adjust to vertically center the text */
+            left: 50%; /* Adjust to horizontally center the text */
+            transform: translate(-50%, -50%); /* Center the text exactly */
+            color: white; /* Adjust the text color */
+            font-size: 24px; /* Adjust the text size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to make text readable on different backgrounds */
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #textaboutus h2{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: #000;
+            /* margin-top: 100px; */
+            
+        }
+        
+        .container0 {
+            display: flex;
+            justify-content: center; /* Horizontally centers the content */
+            align-items: center; /* Vertically centers the content */
+            height: 100vh; /* Adjust as needed */
+            flex-direction: row;
+            background-color: #fbfcf8;
+            
+            
+        }
+        
+        .container {
+            display: flex;
+            max-width: 80vw;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            font-family: 'Cursive Font Name', cursive, sans-serif;
+            /* border: 1px solid #000; */
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            box-shadow: 5px 5px 10px #000;
+        }
+        
+        .left-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border-radius: 20px;
+        }
+        
+        .right-side {
+            flex: 2;
+            padding: 20px;
+        }
+        
+        .right-side h2 {
+            margin-top: 0;
+            color: black;
+            font-family: 'Cursive Font Name', cursive, sans-serif;
+        }
+        
+        .right-side p {
+            margin: 10px 0;
+            font-family: 'Cursive Font Name', cursive, sans-serif;
+            
+        }
+        
+        
+        
+        
+        /* Smartphones (portrait and landscape) */
+        @media only screen and (max-width: 376px) {
+            .container0{
+                margin: 500px 0 700px 0;
+                
+            }
+        
+            .container{
+                margin-top: 200px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 70%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -130px;
+            }
+           
+        }
+        
+        @media only screen and (min-width: 377px) and (max-width: 500px){
+            .container0{
+                margin: 250px 0 450px 0;
+                
+            }
+        
+            .container{
+                margin-top: 200px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 50%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -150px;
+            }
+        }
+        
+        @media only screen and (min-width: 501px) and (max-width: 800px){
+            .container0{
+                margin: 120px 0 350px 0;
+                
+            }
+        
+            .container{
+                margin-top: 200px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 50%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -80px;
+            }
+        }
+        
+        @media only screen and (min-width: 801px) {
+            .container0{
+                margin: 120px 0 350px 0;
+                
+            }
+        
+            
+        
+            
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus{
+                display: flex;
+                justify-content: center;
+                align-items:baseline;
+            }
+        }
+        
+        
+            </style>
+    
+</head>
+<body>
+     <!-- header section starts-->
+
+     <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <a class="active" href="./Services.html" target="blank">Services</a>
+                    <div class="dropdown-content">
+                        <a href="./airline.html">Flight Tickets</a>
+                        <a href="./carrental.html">Car Rental</a>
+                        <a href="./hotelbook.html">Hotel Booking</a>
+                        <a href="./travelinsurance.html">Travel Insurance</a>
+                        <a href="./holidpackage.html">Holiday Package</a>
+                        <a href="./cruise.html">Cruise Package</a>
+                        <a href="./visamanage.html">Visa Management</a>
+                        <a href="./forex.html">Forex Management</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./About.html" target="blank">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="./leadership Team.html">Our Leadership</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./blog.html" target="blank">Blog</a>
+                    <!-- <div class="dropdown-content">
+                        <a href="#">Testimonials</a>
+                    </div> -->
+                </li>
+                <li><a href="./Contactus.html" target="blank">Contact Us</a></li>
+                
+            </ul>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- about us image starts -->
+      
+    <div id="about_image">
+        <img src="./src/images/Holiday BG.png" alt="">
+    </div>
+    <div id="textaboutus">
+        <h2>Holiday Packages</h2>
+        <h4></h4>
+    </div>
+     
+    <!-- about us image ends -->
+
+    <div class="container0">
+        <div class="container">
+            <div class="left-side">
+                <img src="./src/images/holiday package.jpg" alt="Image" class="responsive-image">
+            </div>
+            <div class="right-side">
+                <h2>Holiday Packages</h2>
+                <p>Sharda Travel Management 
+                    Sharda Travel Management offers a comprehensive range of holiday package services, including customized travel itineraries, luxury vacation packages, and group travel planning. Additionally, they provide access to exclusive travel deals and discounts, along with 24/7 customer support.</p>
+                    <br>
+                <p>Certainly! In addition to the services we mentioned earlier, Sharda Travel Management also offers:.</p>
+                <br>
+                <p><i class="fa fa-arrow-right" aria-hidden="true"></i> Destination wedding planning</p>
+                <p><i class="fa fa-arrow-right" aria-hidden="true"></i> Honeymoon planning</p>
+                <p><i class="fa fa-arrow-right" aria-hidden="true"></i> Cruise packages</p>
+                <p><i class="fa fa-arrow-right" aria-hidden="true"></i> Golf vacation packages</p>
+                <p><i class="fa fa-arrow-right" aria-hidden="true"></i> Adventure travel planning</p>
+                <p><i class="fa fa-arrow-right" aria-hidden="true"></i> Spa and wellness retreats</p>
+
+                <p>We collaborate with a network of trusted travel partners to ensure our clients have access to the finest travel options available.</p>
+                <p><b>Here are some additional details about Sharda Travel Management's leisure travel services:</b></p>
+                <p><i class="fa fa-smile-o" aria-hidden="true"></i> We specialize in creating personalized travel experiences tailored to our clients' preferences and interests.</p>
+                <p><i class="fa fa-smile-o" aria-hidden="true"></i>We can arrange travel to destinations all over the world, including popular tourist spots as well as off-the-beaten-path locations.</p>
+                <p><i class="fa fa-smile-o" aria-hidden="true"></i>We offer a range of travel styles, from luxury vacations to budget-friendly trips.</p>
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+<!-- Footer section starts -->
+<footer>
+    <div class="col">
+        <a href="./index.html"><img class="logo" src="./src/images/latest_logo_of_sharda-removebg-preview.png" alt="logo" height="80px"></a>
+        <h4>Connect With Sharda Travel</h4>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Home Office Address:</strong> Marcory Zone 4 Rue du Canal 10 BP 3473 ABIDJAN 10</p>
+        <p><i class="fas fa-phone fa-rotate-90"></i> <strong>Phone:</strong> (+225)0719887362 / (+91) 9587532127</p>
+        <p><i class="fas fa-envelope"></i> <strong>Mail Us:</strong> salesabj@shardatravel.com</p>
+    </div>
+    <div class="follow col">
+        <h4>Connect With Sharda Travel</h4>
+        <div class="icon">
+            <a href="https://www.instagram.com/shardatravelabj?igsh=MWFmdjNia2hpOHRtdg==" target="_blank"><i class="fab fa-instagram" style="color:pink;"></i>Instagram</a>
+            <a href="https://wa.me/+2250719887362" target="_blank"><i class="fab fa-whatsapp" style="color:green;"></i>Whatsapp</a>
+            <a href="https://www.facebook.com/profile.php?id=61562710124378&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook" style="color:Blue;"></i>Facebook</a>
+            <!-- <a href="" target="_blank"><i class="fa-brands fa-twitter" style="color:Blue;"></i>Twitter</a> -->
+        </div>
+    </div>
+    <div class="col">
+        <h4>Useful Links</h4>
+        <a href="./index.html">Home</a>
+        <a href="./About.html">About Us</a>
+        <a href="./Contactus.html">Contact Us</a>
+        <a href="./leadership Team.html">Leadership Team</a>
+        <a href="./Services.html">Services</a>
+        <a href="./blog.html">Blog</a>
+    </div>
+    <div class="copyright">
+        <p>All rights reserved. © Sharda travel @ 2024</p>
+    </div>
+</footer>
+
+<script src="../src/Utils/script.js"></script>
+
+</body>
+</html>

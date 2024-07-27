@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon_2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon_2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon_2/favicon-16x16.png">
+    <link rel="manifest" href="./src/images/favicon_2/site.webmanifest">
+    <link rel="mask-icon" href="./src/images/favicon_2/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+      /* services */
+
+#service_image{
+    position: relative;
+}
+
+#service_image img{
+    width: 100%;
+    height: 100%;
+   
+    opacity: 0.85;
+    display:block;
+    
+}
+
+#textservice{
+    position: absolute;
+    top: 30%; /* Adjust to vertically center the text */
+    left: 50%; /* Adjust to horizontally center the text */
+    transform: translate(-50%, -50%); /* Center the text exactly */
+    color: black; /* Adjust the text color */
+    font-size: 30px; /* Adjust the text size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to make text readable on different backgrounds */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#textservice h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    margin-top: -80px;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.5)
+    
+    
+}
+
+
+
+/* Small devices (phones, less than 375px) */
+@media only screen and (max-width: 375px) {
+    #textservice h2 {
+        font-size: 24px;
+        margin-top: -160px;
+    }
+  
+}
+
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+    #textservice h2 {
+        font-size: 24px;
+        margin-top: -200px;
+    }
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #textservice h2 {
+        font-size: 32px;
+        margin-top: -150px;
+    }
+}
+
+
+/* services cards */
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: hsl(170, 12%, 98%);
+  --gray-color: hsl(170, 4%, 60%);
+  --black-color: hsl(170, 12%, 8%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bona Nova", serif;
+  --normal-font-size: 1.2rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: #ffffff;
+  color: var(--gray-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.servicecontainer {
+  display: grid;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+}
+
+.servicecard__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 348px));
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+.card__article {
+  position: relative;
+  background-color: var(--black-color);
+  border: 2px solid var(--gray-color);
+  padding: 3rem 1.5rem 1.5rem;
+  display: grid;
+  row-gap: 1rem;
+  overflow: hidden;
+  transition: background-color .6s;
+  border-radius: 30px;
+  background-color: #f0ddca;
+  
+}
+
+
+.card__img {
+  width: 200px;
+  justify-self: center;
+  filter: drop-shadow(0 8px 24px hsla(170, 12%, 8%, .1));
+  transition: transform .4s;
+  border-radius: 20px;
+  
+}
+
+.card__data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .4s, opacity .4s;
+}
+
+.card__title {
+  font-size: var(--normal-font-size);
+  font-weight: 800;
+  
+}
+
+.card__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.3);
+  z-index: -1;
+  transition: transform .4s;
+}
+
+.card__button {
+  background-color: #000111;
+  padding: .75rem 1rem;
+  color: #fffeee;
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  justify-self: center;
+  box-shadow: 0 8px 24px hsla(170, 12%, 8%, .1);
+  position: absolute;
+  bottom: -1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .4s, opacity .4s;
+  border-radius: 120px;
+}
+
+.card__button i {
+  font-size: 1.25rem;
+  transition: transform .4s;
+}
+.card__button:hover i {
+  transform: translateX(.5rem);
+}
+
+/* Card animation */
+.card__article:hover .card__img {
+  transform: translateY(-19.5rem);
+}
+
+.card__article:hover .card__data {
+  transform: translateY(-4.5rem);
+  opacity: 0;
+}
+
+.card__article:hover {
+  background-color: transparent;
+}
+
+.card__article:hover .card__bg {
+  transform: scale(1);
+}
+
+.card__article:hover .card__button {
+  transform: translateY(-3.75rem);
+  opacity: 1;
+  pointer-events: initial;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 375px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .card__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+  }
+
+  .card__img {
+    width: 220px;
+  }
+}
+    </style>
+    
+    
+
+</head>
+<body>
+     <!-- header section starts-->
+
+     <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
+      </div>
+      <nav class="navbar">
+          <ul class="menu">
+              <li><a href="./index.html">Home</a></li>
+              <li>
+                  <a class="active" href="./Services.html" target="blank">Services</a>
+                  <div class="dropdown-content">
+                      <a href="./airline.html">Flight Tickets</a>
+                      <a href="./carrental.html">Car Rental</a>
+                      <a href="./hotelbook.html">Hotel Booking</a>
+                      <a href="./travelinsurance.html">Travel Insurance</a>
+                      <a href="./holidpackage.html">Holiday Package</a>
+                      <a href="./cruise.html">Cruise Package</a>
+                      <a href="./visamanage.html">Visa Management</a>
+                      <a href="./forex.html">Forex Management</a>
+                  </div>
+              </li>
+              <li>
+                  <a href="./About.html" target="blank">About Us</a>
+                  <div class="dropdown-content">
+                      <a href="./leadership Team.html">Our Leadership</a>
+                  </div>
+              </li>
+              <li>
+                  <a href="./blog.html" target="blank">Blog</a>
+                  <!-- <div class="dropdown-content">
+                      <a href="#">Testimonials</a>
+                  </div> -->
+              </li>
+              <li><a href="./Contactus.html" target="blank">Contact Us</a></li>
+             
+          </ul>
+          <button class="nav-toggle" aria-label="toggle navigation">
+              <span class="hamburger"></span>
+          </button>
+      </nav>
+  </header>
+
+    <!-- header section ends -->
+
+  <!-- services image banner starts -->
+    <div id="service_image">
+        <img src="./src/images/our services BG.png" alt="">
+        </div>
+    <div id="textservice">
+        <h2>Services</h2>
+    </div>
+<!-- services banner image ends -->
+     
+<!-- Services page starts -->
+
+<div class="servicecontainer">
+    <div class="servicecard__container">
+       <article class="card__article">
+          <img src="./src/images/airplane ticket.jpg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <h3 class="card__title">Flight Tickets</h3>
+             <!-- <span class="card__price">$5999</span> -->
+          </div>
+
+          <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+          
+          <a href="./airline.html" class="card__button">
+             View More <i class="ri-arrow-right-line"></i>
+          </a>
+       </article>
+
+       <article class="card__article">
+        <img src="./src/images/car rental.jpg" alt="image" class="card__img">
+
+        <div class="card__data">
+           <h3 class="card__title">Car Rentals</h3>
+           <!-- <span class="card__price">$5999</span> -->
+        </div>
+
+        <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+        
+        <a href="./carrental.html" class="card__button">
+           View More <i class="ri-arrow-right-line"></i>
+        </a>
+     </article>
+
+     <article class="card__article">
+        <img src="./src/images/cruise.jpg" alt="image" class="card__img">
+
+        <div class="card__data">
+           <h3 class="card__title">Cruise Packages</h3>
+           <!-- <span class="card__price">$5999</span> -->
+        </div>
+
+        <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+        
+        <a href="./cruise.html" class="card__button">
+           View More <i class="ri-arrow-right-line"></i>
+        </a>
+     </article>
+
+     <article class="card__article">
+        <img src="./src/images/holiday package.jpg" alt="image" class="card__img">
+
+        <div class="card__data">
+           <h3 class="card__title">Holiday Packages</h3>
+           <!-- <span class="card__price">$5999</span> -->
+        </div>
+
+        <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+        
+        <a href="./holidpackage.html" class="card__button">
+           View More <i class="ri-arrow-right-line"></i>
+        </a>
+     </article>
+
+     <article class="card__article">
+        <img src="./src/images/hotel booking.jpg" alt="image" class="card__img">
+
+        <div class="card__data">
+           <h3 class="card__title">Hotel Booking</h3>
+           <!-- <span class="card__price">$5999</span> -->
+        </div>
+
+        <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+        
+        <a href="./hotelbook.html" class="card__button">
+           View More <i class="ri-arrow-right-line"></i>
+        </a>
+     </article>
+
+     <article class="card__article">
+      <img src="./src/images/visa assistance.jpg" alt="image" class="card__img">
+
+      <div class="card__data">
+         <h3 class="card__title">Visa Management</h3>
+         <!-- <span class="card__price">$5999</span> -->
+      </div>
+
+      <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+      
+      <a href="./visamanage.html" class="card__button">
+         View More <i class="ri-arrow-right-line"></i>
+      </a>
+   </article>
+
+   <article class="card__article">
+      <img src="./src/images/travel insurance icon .jpg" alt="image" class="card__img">
+
+      <div class="card__data">
+         <h3 class="card__title">Travel Insurance</h3>
+         <!-- <span class="card__price">$5999</span> -->
+      </div>
+
+      <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+      
+      <a href="./travelinsurance.html" class="card__button">
+         View More <i class="ri-arrow-right-line"></i>
+      </a>
+   </article>
+
+   <article class="card__article">
+      <img src="./src/images/Forex Icon.jpg" alt="image" class="card__img">
+
+      <div class="card__data">
+         <h3 class="card__title">Forex Management</h3>
+         <!-- <span class="card__price">$5999</span> -->
+      </div>
+
+      <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+      
+      <a href="./forex.html" class="card__button">
+         View More <i class="ri-arrow-right-line"></i>
+      </a>
+   </article>
+
+  
+
+    <!-- <img src="./images/beige background.jpg" alt="image" class="card__bg"> -->
+    
+    
+ </article>
+
+    
+    </div>
+ </div>
+
+
+
+
+<!-- Services page ends -->
+
+
+
+
+
+
+<!-- Footer section starts -->
+<footer>
+  <div class="col">
+      <a href="./index.html"><img class="logo" src="./src/images/latest_logo_of_sharda-removebg-preview.png" alt="logo" height="80px"></a>
+      <h4>Connect With Sharda Travel</h4>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Home Office Address:</strong> Marcory Zone 4 Rue du Canal 10 BP 3473 ABIDJAN 10</p>
+      <p><i class="fas fa-phone fa-rotate-90"></i> <strong>Phone:</strong> (+225)0719887362 / (+91) 9587532127</p>
+      <p><i class="fas fa-envelope"></i> <strong>Mail Us:</strong> salesabj@shardatravel.com</p>
+  </div>
+  <div class="follow col">
+      <h4>Connect With Sharda Travel</h4>
+      <div class="icon">
+          <a href="https://www.instagram.com/shardatravelabj?igsh=MWFmdjNia2hpOHRtdg==" target="_blank"><i class="fab fa-instagram" style="color:pink;"></i>Instagram</a>
+          <a href="https://wa.me/+2250719887362" target="_blank"><i class="fab fa-whatsapp" style="color:green;"></i>Whatsapp</a>
+          <a href="https://www.facebook.com/profile.php?id=61562710124378&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook" style="color:Blue;"></i>Facebook</a>
+          <!-- <a href="" target="_blank"><i class="fa-brands fa-twitter" style="color:Blue;"></i>Twitter</a> -->
+      </div>
+  </div>
+  <div class="col">
+      <h4>Useful Links</h4>
+      <a href="./index.html">Home</a>
+      <a href="./About.html">About Us</a>
+      <a href="./Contactus.html">Contact Us</a>
+      <a href="./leadership Team.html">Leadership Team</a>
+      <a href="./Services.html">Services</a>
+      <a href="./blog.html">Blog</a>
+  </div>
+  <div class="copyright">
+      <p>All rights reserved. © Sharda travel @ 2024</p>
+  </div>
+</footer>
+
+<script src="./src/Utils/script.js"></script>
+
+</body>
+</html>
