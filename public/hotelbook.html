@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking</title>
+    <title>Hotel Booking - Sharda Travel</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="./src/css/styles.css">
 
@@ -73,7 +73,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             overflow: hidden;
-            font-family: 'Cursive Font Name', cursive, sans-serif;
+           
             /* border: 1px solid #000; */
             justify-content: center;
             align-items: center;
@@ -103,12 +103,14 @@
         .right-side h2 {
             margin-top: 0;
             color: black;
-            font-family: 'Cursive Font Name', cursive, sans-serif;
+            
         }
         
         .right-side p {
             margin: 10px 0;
-            font-family: 'Cursive Font Name', cursive, sans-serif;
+            font-weight: 500;
+            color: #000;
+            text-align: justify;
             
         }
         
@@ -229,13 +231,16 @@
 
      <header>
         <div class="logo">
-            <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
+          <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
         </div>
         <nav class="navbar">
             <ul class="menu">
                 <li><a href="./index.html">Home</a></li>
                 <li>
-                    <a class="active" href="./Services.html" target="blank">Services</a>
+                    <div class="accordian active">
+                    <a href="./Services.html" target="blank">Services</a>
+                    <i class="services_down  fa fa-angle-down"></i>
+                    </div>
                     <div class="dropdown-content">
                         <a href="./airline.html">Flight Tickets</a>
                         <a href="./carrental.html">Car Rental</a>
@@ -248,9 +253,13 @@
                     </div>
                 </li>
                 <li>
+                    <div class="accordian2">
                     <a href="./About.html" target="blank">About Us</a>
-                    <div class="dropdown-content">
+                    <i class="about_down  fa fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-content about-content">
                         <a href="./leadership Team.html">Our Leadership</a>
+                        <a href="./other_brands.html">Our Brands</a>
                     </div>
                 </li>
                 <li>
@@ -260,7 +269,7 @@
                     </div> -->
                 </li>
                 <li><a href="./Contactus.html" target="blank">Contact Us</a></li>
-                
+               
             </ul>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -292,12 +301,12 @@
                 <h2>Hotel Booking</h2>
                 <p>Sharda Travel Private Limited is an international travel management company that offers a range of services, including hotel bookings. They collaborate with various hotels and accommodation providers to offer their clients a wide selection of options to choose from.</p>
                 <p>They provide personalized service to ensure that their clients’ needs and preferences are met, and they can also assist with other travel arrangements such as flights, transportation, and activities..</p>
-                <p style="font-size: bold;">There are several advantages of using hotel booking services from Us, including:</p>
-                <p> <i class="fa-solid fa-house"></i>Wide selection of hotels: Sharda Travel Private Limited works with a wide range of hotels, from budget-friendly to luxury accommodations, to provide clients with a variety of options to choose from.</p>
-                <p><i class="fa-solid fa-hotel" style="color: blue;"></i> Personalized service: our travel advisors provide personalized service to ensure that clients’ needs and preferences are met. They can also provide travel recommendations and advice to help clients make the most of our trips.</p>
-                <p><i class="fa-solid fa-hotel" style="color: blue;"></i> Time-saving: Booking a hotel through Sharda Travel Private Limited can save time as clients don’t have to spend time searching for hotels themselves. The travel advisors can handle all the details and provide options that meet the client's needs.</p>
-                <p><i class="fa-solid fa-hotel" style="color: blue;"></i> Cost-effective: Sharda Travel Private Limited can often negotiate better rates with hotels due to our relationships with them. This means that clients may be able to get better deals on our hotel bookings.</p>
-                <p><i class="fa-solid fa-hotel" style="color: blue;"></i> Assistance with other travel arrangements: Sharda Travel Private Limited can also assist with other travel arrangements such as flights, car rentals, and activities. This can make it easier for clients to plan our entire trip in one place.</p>
+                <p>There are several advantages of using hotel booking services from Us, including:</p>
+                <p>Wide selection of hotels: Sharda Travel Private Limited works with a wide range of hotels, from budget-friendly to luxury accommodations, to provide clients with a variety of options to choose from.</p>
+                <p>Personalized service: our travel advisors provide personalized service to ensure that clients’ needs and preferences are met. They can also provide travel recommendations and advice to help clients make the most of our trips.</p>
+                <p>Time-saving: Booking a hotel through Sharda Travel Private Limited can save time as clients don’t have to spend time searching for hotels themselves. The travel advisors can handle all the details and provide options that meet the client's needs.</p>
+                <p>Cost-effective: Sharda Travel Private Limited can often negotiate better rates with hotels due to our relationships with them. This means that clients may be able to get better deals on our hotel bookings.</p>
+                <p>Assistance with other travel arrangements: Sharda Travel Private Limited can also assist with other travel arrangements such as flights, car rentals, and activities. This can make it easier for clients to plan our entire trip in one place.</p>
             </div>
         </div>
         </div>
@@ -325,13 +334,16 @@
         </div>
     </div>
     <div class="col">
-        <h4>Useful Links</h4>
-        <a href="./index.html">Home</a>
-        <a href="./About.html">About Us</a>
-        <a href="./Contactus.html">Contact Us</a>
-        <a href="./leadership Team.html">Leadership Team</a>
-        <a href="./Services.html">Services</a>
-        <a href="./blog.html">Blog</a>
+        <div class="col">
+            <h4>Useful Links</h4>
+            <a href="./index.html">Home</a>
+            <a href="./Services.html">Services</a>
+            <a href="./About.html">About Us</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./Contactus.html">Contact Us</a>
+            <a href="./leadership Team.html">Leadership Team</a>
+            <a href="./other_brands.html">Our Brands</a>
+        </div>
     </div>
     <div class="copyright">
         <p>All rights reserved. © Sharda travel @ 2024</p>

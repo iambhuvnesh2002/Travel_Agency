@@ -6,6 +6,8 @@
     font-family: spartan,sans-serif;
 }
 
+
+
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -16,7 +18,7 @@ h1{
     font-size: 46px;
     line-height: 54px;
     color: #222;
-    font-family:'Times New Roman', Times, serif;
+    
 } */
 
 h4{
@@ -104,6 +106,8 @@ header img {
     border-radius: 10px;
 }
 
+
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -114,14 +118,40 @@ header img {
     font-size: small;
 }
 
+.dropdown-content.active{
+    display: block;
+}
+
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-.menu li:hover .dropdown-content {
-    display: block;
+.services_down{
+    color: #000;
+}
+.about_down{
+    color: #000;
 }
 
+.accordian{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1CABF2; */
+    border-radius: 50px;
+    padding-right: 30px;
+
+}
+
+.accordian2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1CABF2; */
+    border-radius: 50px;
+    padding-right: 30px;
+
+}
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -219,6 +249,24 @@ header img {
     }
 }
 
+@media screen and (min-width: 768px){
+    .services_down{
+        display: none;
+    }
+    .accordian{
+        padding-right: 0px;
+    }
+    .about_down{
+        display: none;
+    }
+    .accordian2{
+        padding-right: 0px;
+    }
+
+    .menu li:hover .dropdown-content {
+        display: block;
+    }
+}
 .hero {
     margin-top: 80px; /* Ensure content starts below the navbar */
     height: 300px; /* Adjust the height as needed */
@@ -320,7 +368,7 @@ header img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    font-family: 'Cursive Font Name', cursive, sans-serif;
+
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 5px #010130 ;
@@ -363,7 +411,7 @@ header img {
 
 .right-side p {
     margin: 10px 0;
-    font-family: 'Cursive Font Name', cursive, sans-serif;
+    
     
     
 }
@@ -810,7 +858,6 @@ footer .copyright {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
-    font-family: 'Cursive Font Name', cursive, sans-serif;
     /* border: 1px solid #000; */
     justify-content: center;
     align-items: center;
@@ -840,12 +887,12 @@ footer .copyright {
 .right-side h2 {
     margin-top: 0;
     color: black;
-    font-family: 'Cursive Font Name', cursive, sans-serif;
+    
 }
 
 .right-side p {
     margin: 10px 0;
-    font-family: 'Cursive Font Name', cursive, sans-serif;
+   
     
 }
 
@@ -869,7 +916,6 @@ footer .copyright {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
-    font-family: 'Georgia', serif; /* Changed to a serif font for a more elegant look */
     justify-content: center;
     align-items: center;
     margin-top: 100px;
@@ -898,19 +944,16 @@ footer .copyright {
 .about-right-side h2 {
     margin-top: 0;
     color: #333; /* Changed color for better readability */
-    font-family: 'Georgia', serif; /* Changed to a serif font for a more elegant look */
     font-size: 2em; /* Adjusted font size for better emphasis */
 }
 
 .about-right-side h3 {
     color: #666; /* Added color for better readability */
-    font-family: 'Georgia', serif; /* Ensured consistent font */
     font-size: 1.5em; /* Adjusted font size for better emphasis */
 }
 
 .about-right-side p {
     margin: 10px 0;
-    font-family: 'Georgia', serif; /* Changed to a serif font for a more elegant look */
     line-height: 1.6; /* Increased line height for better readability */
 }
 

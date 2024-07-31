@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Insurance</title>
+    <title>Travel Insurance - Sharda Travel</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="./src/css/styles.css">
 
@@ -73,7 +73,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
-    font-family: 'Cursive Font Name', cursive, sans-serif;
+    
     /* border: 1px solid #000; */
     justify-content: center;
     align-items: center;
@@ -103,12 +103,14 @@
 .right-side h2 {
     margin-top: 0;
     color: black;
-    font-family: 'Cursive Font Name', cursive, sans-serif;
+    
 }
 
 .right-side p {
     margin: 10px 0;
-    font-family: 'Cursive Font Name', cursive, sans-serif;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
     
 }
 
@@ -230,13 +232,16 @@
 
      <header>
         <div class="logo">
-            <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
+          <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
         </div>
         <nav class="navbar">
             <ul class="menu">
                 <li><a href="./index.html">Home</a></li>
                 <li>
-                    <a class="active" href="./Services.html" target="blank">Services</a>
+                    <div class="accordian active">
+                    <a href="./Services.html" target="blank">Services</a>
+                    <i class="services_down  fa fa-angle-down"></i>
+                    </div>
                     <div class="dropdown-content">
                         <a href="./airline.html">Flight Tickets</a>
                         <a href="./carrental.html">Car Rental</a>
@@ -249,9 +254,13 @@
                     </div>
                 </li>
                 <li>
+                    <div class="accordian2">
                     <a href="./About.html" target="blank">About Us</a>
-                    <div class="dropdown-content">
+                    <i class="about_down  fa fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-content about-content">
                         <a href="./leadership Team.html">Our Leadership</a>
+                        <a href="./other_brands.html">Our Brands</a>
                     </div>
                 </li>
                 <li>
@@ -261,7 +270,7 @@
                     </div> -->
                 </li>
                 <li><a href="./Contactus.html" target="blank">Contact Us</a></li>
-                
+               
             </ul>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -327,13 +336,16 @@
         </div>
     </div>
     <div class="col">
-        <h4>Useful Links</h4>
-        <a href="./index.html">Home</a>
-        <a href="./About.html">About Us</a>
-        <a href="./Contactus.html">Contact Us</a>
-        <a href="./leadership Team.html">Leadership Team</a>
-        <a href="./Services.html">Services</a>
-        <a href="./blog.html">Blog</a>
+        <div class="col">
+            <h4>Useful Links</h4>
+            <a href="./index.html">Home</a>
+            <a href="./Services.html">Services</a>
+            <a href="./About.html">About Us</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./Contactus.html">Contact Us</a>
+            <a href="./leadership Team.html">Leadership Team</a>
+            <a href="./other_brands.html">Our Brands</a>
+        </div>
     </div>
     <div class="copyright">
         <p>All rights reserved. © Sharda travel @ 2024</p>
