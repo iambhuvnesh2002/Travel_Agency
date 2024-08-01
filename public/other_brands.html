@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Brands - Sharda Travel</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon_2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon_2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon_2/favicon-16x16.png">
+    <link rel="manifest" href="./src/images/favicon_2/site.webmanifest">
+    <link rel="mask-icon" href="./src/images/favicon_2/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <style>
+        body{
+            background-color: #fbfcf8;
+        }
+            
+            #about_image{
+            position: relative;
+        }
+        
+        #about_image img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.85;
+            display:block;
+            
+        }
+        
+        #textaboutus{
+            position: absolute;
+            top: 25%; /* Adjust to vertically center the text */
+            left: 50%; /* Adjust to horizontally center the text */
+            transform: translate(-50%, -50%); /* Center the text exactly */
+            color: white; /* Adjust the text color */
+            font-size: 24px; /* Adjust the text size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to make text readable on different backgrounds */
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #textaboutus h2{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: #000;
+            /* margin-top: 100px; */
+            
+        }
+        
+        .container0 {
+            display: flex;
+            justify-content: center; /* Horizontally centers the content */
+            align-items: center; /* Vertically centers the content */
+            height: 100vh; /* Adjust as needed */
+            flex-direction: row;
+            background-color: #fbfcf8;  
+        }
+        
+        .container {
+            display: flex;
+            max-width: 80vw;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            font-family: 'Cursive Font Name', cursive, sans-serif;
+            /* border: 1px solid #000; */
+            justify-content: center;
+            align-items: center;
+            margin-top: -100px;
+            box-shadow: 5px 5px 10px #000;
+            
+        }
+        
+        .left-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border-radius: 20px;
+        }
+        
+        .right-side {
+            flex: 2;
+            padding: 20px;
+        }
+        
+        .right-side h2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 0;
+            color: black;
+            font-family:'Times New Roman', Times, serif;
+        }
+        
+        .right-side h3 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 0;
+            color: black;
+            
+        }
+
+        .right-side p {
+            margin: 10px 0;
+            font-family: 'Cursive Font Name', cursive, sans-serif;
+            
+        }
+        
+        
+        
+        
+        /* Smartphones (portrait and landscape) */
+        @media only screen and (max-width: 376px) {
+            .container0{
+                margin: 250px 0 600px 0;
+                
+            }
+        
+            .container{
+                margin-top: 200px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 70%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -130px;
+            }
+
+            footer{
+                margin-top: -100px;
+            }
+           
+        }
+        
+        @media only screen and (min-width: 377px) and (max-width: 500px){
+            .container0{
+                margin: 100px 0 350px 0;
+                
+            }
+        
+            .container{
+                margin-top: 200px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 50%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -150px;
+            }
+        }
+        
+        @media only screen and (min-width: 501px) and (max-width: 800px){
+            .container0{
+                margin: 50px 0 250px 0;
+                
+            }
+        
+            .container{
+                margin-top: 200px;
+                /* margin-bottom: 1000px; */
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .responsive-image{
+                width: 50%;
+                /* height: 50%; */
+                margin-top: 20px;
+            
+            }
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus h2{
+                margin-top: -80px;
+            }
+        }
+        
+        @media only screen and (min-width: 801px) {
+            .container0{
+                margin: 10px 0 70px 0;
+                
+            }
+        
+            
+        
+            
+            #about_image img{
+                margin-top: 0px;
+            }
+        
+            #textaboutus{
+                display: flex;
+                justify-content: center;
+                align-items:baseline;
+            }
+        }
+        
+        
+            </style>
+
+</head>
+<body>
+        
+
+   <!-- header section starts-->
+
+   <header>
+    <div class="logo">
+      <a href="./index.html"><img src="./src/images/logo_fo_sharda-removebg-preview.png" alt="Logo"></a>
+    </div>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li>
+                <div class="accordian">
+                <a href="./Services.html" target="blank">Services</a>
+                <i class="services_down  fa fa-angle-down"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="./airline.html">Flight Tickets</a>
+                    <a href="./carrental.html">Car Rental</a>
+                    <a href="./hotelbook.html">Hotel Booking</a>
+                    <a href="./travelinsurance.html">Travel Insurance</a>
+                    <a href="./holidpackage.html">Holiday Package</a>
+                    <a href="./cruise.html">Cruise Package</a>
+                    <a href="./visamanage.html">Visa Management</a>
+                    <a href="./forex.html">Forex Management</a>
+                </div>
+            </li>
+            <li>
+                <div class="accordian2 active">
+                <a href="./About.html" target="blank">About Us</a>
+                <i class="about_down  fa fa-angle-down"></i>
+                </div>
+                <div class="dropdown-content about-content">
+                    <a href="./leadership Team.html">Our Leadership</a>
+                    <a href="./other_brands.html">Our Brands</a>
+                </div>
+            </li>
+            <li>
+                <a href="./blog.html" target="blank">Blog</a>
+                <!-- <div class="dropdown-content">
+                    <a href="#">Testimonials</a>
+                </div> -->
+            </li>
+            <li><a href="./Contactus.html" target="blank">Contact Us</a></li>
+           
+        </ul>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+    </nav>
+</header>
+    <!-- header section ends -->
+
+    <!-- about us image starts -->
+    <div id="about_image">
+        <img src="./src/images/our brand  bg.png" alt="">
+    </div>
+    <div id="textaboutus">
+        <h2 style="text-shadow: 5px 0px 2px #fff;"></h2>
+        <h4></h4>
+    </div>
+    <!-- about us image ends -->
+
+    <!-- bluejay travels -->
+    
+    <div class="container0">
+        <div class="container">
+            <div class="left-side">
+                <img src="./src/images/bluejay travels.jpg" alt="Image" class="responsive-image">
+            </div>
+            <div class="right-side">
+                <h2 style="font-family: 'Times New Roman', Times, serif;">Bluejay-Travels</h2>
+                <h3>Subsidiary OF SHARDA TRAVEL</h3>
+                <p>Bluejay Travels is a distinguished brand within the Sharda Travel family, specializing in delivering extraordinary travel experiences tailored to the diverse needs of our clients. With access to the extensive resources and industry expertise of Sharda Travel, Bluejay Travels ensures a seamless, personalized travel experience that exceeds expectations.</p>
+                <p><b>Key Services:</b></p>
+                <ul>
+                    <li>Customized Travel Packages: Tailor-made travel packages designed to meet individual preferences and needs.</li>
+                    <li>Luxury Tours and Adventures: Exclusive tours and adventures that offer unparalleled luxury and unforgettable experiences.</li>
+                    <li>Corporate Travel Solutions: Comprehensive travel solutions for businesses, ensuring efficiency and convenience.</li>
+                    <li>Sustainable Travel Options: Eco-friendly travel options that promote responsible tourism and sustainability.</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- Heavens constructions -->
+    <div class="container0">
+        <div class="container">
+            <div class="left-side">
+                <img src="./src/images/heaven const..jpg" alt="Image" class="responsive-image">
+            </div>
+            <div class="right-side">
+                <h2 style="font-family: 'Times New Roman', Times, serif;">Heaven Constructions</h2>
+                <h3>Subsidiary of SHARDA TRAVEL</h3>
+                <p>Heaven Constructions stands as a leading entity in the construction sector, known for its innovative approach and commitment to sustainable building practices. As an integral part of the Sharda Travel family, Heaven Constructions leverages cutting-edge technology and expert craftsmanship to deliver superior construction projects that meet the highest standards of quality.</p>
+                <p><b>Key Services:</b></p>
+                <p><b>Residential and Commercial Construction:</b> Expert construction services for both residential and commercial properties, tailored to meet diverse needs.</p>
+                <p><b>Infrastructure Development:</b> Innovative solutions for infrastructure projects, contributing to community development and growth.</p>
+                <p><b>Renovation and Remodeling:</b> High-quality renovation and remodeling services that breathe new life into existing structures.</p>
+                <p><b>Sustainable Building Practices:</b> Environmentally conscious construction practices that prioritize sustainability and efficiency.</p>
+                </ul>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    
+
+
+
+  
+<!-- Footer section starts -->
+<footer>
+    <div class="col">
+        <a href="./index.html"><img class="logo" src="./src/images/latest_logo_of_sharda-removebg-preview.png" alt="logo" height="80px"></a>
+        <h4>Connect With Sharda Travel</h4>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Home Office Address:</strong> Marcory Zone 4 Rue du Canal 10 BP 3473 ABIDJAN 10</p>
+        <p><i class="fas fa-phone fa-rotate-90"></i> <strong>Phone:</strong> (+225)0719887362</p>
+        <p><i class="fas fa-phone fa-rotate-90"></i> <strong>Phone:</strong> (+91) 9587532127</p>
+        <p><i class="fas fa-envelope"></i> <strong>Mail Us:</strong> salesabj@shardatravel.com</p>
+    </div>
+    <div class="follow col">
+        <h4>Connect With Sharda Travel</h4>
+        <div class="icon">
+            <a href="https://www.instagram.com/shardatravelabj?igsh=MWFmdjNia2hpOHRtdg==" target="_blank"><i class="fab fa-instagram" style="color:pink;"></i>Instagram</a>
+            <a href="https://wa.me/+221785932913" target="_blank"><i class="fab fa-whatsapp" style="color:green;"></i>Whatsapp</a>
+            <a href="https://www.facebook.com/profile.php?id=61562710124378&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook" style="color:Blue;"></i>Facebook</a>
+            <!-- <a href="" target="_blank"><i class="fa-brands fa-twitter" style="color:Blue;"></i>Twitter</a> -->
+        </div>
+    </div>
+    <div class="col">
+        <h4>Useful Links</h4>
+        <a href="./index.html">Home</a>
+        <a href="./Services.html">Services</a>
+        <a href="./About.html">About Us</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./Contactus.html">Contact Us</a>
+        <a href="./leadership Team.html">Leadership Team</a>
+        <a href="./other_brands.html">Our Brands</a>
+    </div>
+    <div class="copyright">
+        <p>All rights reserved. © Sharda travel @ 2024</p>
+    </div>
+</footer>
+
+    <script src="./src/Utils/script.js"></script>
+
+</body>
+</html>
+
+
