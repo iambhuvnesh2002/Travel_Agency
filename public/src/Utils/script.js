@@ -16,10 +16,16 @@ servicebtn.addEventListener("click",()=>{
     
     if (dropdown.classList.contains("active")){
         dropdown.classList.remove("active")
+        servicebtn.classList.add("fa-angle-down")
+        servicebtn.classList.remove("fa-angle-up")
+        
     }
     else{
         dropdown.classList.add("active")
+        servicebtn.classList.remove("fa-angle-down")
+        servicebtn.classList.add("fa-angle-up")
     }
+    // servicebtn.classList.toggle("rotate")
 })
 
 const aboutbtn=document.querySelector(".about_down")
@@ -28,9 +34,13 @@ aboutbtn.addEventListener("click",()=>{
     
     if (aboutcontent.classList.contains("active")){
         aboutcontent.classList.remove("active")
+        aboutbtn.classList.add("fa-angle-down")
+        aboutbtn.classList.remove("fa-angle-up")
     }
     else{
         aboutcontent.classList.add("active")
+        aboutbtn.classList.remove("fa-angle-down")
+        aboutbtn.classList.add("fa-angle-up")
     }
 })
 

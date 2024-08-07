@@ -59,7 +59,7 @@
             display: flex;
             justify-content: center; /* Horizontally centers the content */
             align-items: center; /* Vertically centers the content */
-            height: 100vh; /* Adjust as needed */
+            height: 80vh; /* Adjust as needed */
             flex-direction: row;
             background-color: #fbfcf8;  
         }
@@ -71,7 +71,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             overflow: hidden;
-            font-family: 'Cursive Font Name', cursive, sans-serif;
+           
             /* border: 1px solid #000; */
             justify-content: center;
             align-items: center;
@@ -105,7 +105,7 @@
             text-align: center;
             margin-top: 0;
             color: black;
-            font-family:'Times New Roman', Times, serif;
+           
         }
         
         .right-side h3 {
@@ -119,8 +119,31 @@
 
         .right-side p {
             margin: 10px 0;
-            font-family: 'Cursive Font Name', cursive, sans-serif;
+            font-weight: 500;
+            color: #000;
+            text-align: justify;
             
+        }
+
+        #Explore_Bluejay{
+            display: inline-block;
+            box-shadow: 2px 2px 5px #1cabf2;
+            margin: 5px;
+            padding: 10px  15px 10px 15px;
+            
+            text-decoration: none;
+            color: white;
+            background-color: #000;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.2);
+                
+                background-color: #1cabf2;
+            }
+
         }
         
         
@@ -218,7 +241,7 @@
         
         @media only screen and (min-width: 801px) {
             .container0{
-                margin: 10px 0 70px 0;
+                margin:0;
                 
             }
         
@@ -312,17 +335,18 @@
                 <img src="./src/images/bluejay travels.jpg" alt="Image" class="responsive-image">
             </div>
             <div class="right-side">
-                <h2 style="font-family: 'Times New Roman', Times, serif;">Bluejay-Travels</h2>
+                <h2>Bluejay-Travels</h2>
                 <h3>Subsidiary OF SHARDA TRAVEL</h3>
                 <p>Bluejay Travels is a distinguished brand within the Sharda Travel family, specializing in delivering extraordinary travel experiences tailored to the diverse needs of our clients. With access to the extensive resources and industry expertise of Sharda Travel, Bluejay Travels ensures a seamless, personalized travel experience that exceeds expectations.</p>
                 <p><b>Key Services:</b></p>
-                <ul>
-                    <li>Customized Travel Packages: Tailor-made travel packages designed to meet individual preferences and needs.</li>
-                    <li>Luxury Tours and Adventures: Exclusive tours and adventures that offer unparalleled luxury and unforgettable experiences.</li>
-                    <li>Corporate Travel Solutions: Comprehensive travel solutions for businesses, ensuring efficiency and convenience.</li>
-                    <li>Sustainable Travel Options: Eco-friendly travel options that promote responsible tourism and sustainability.</li>
-                </ul>
                 
+                <p><b>Customized Travel Packages:</b>Tailor-made travel packages designed to meet individual preferences and needs.</p>
+                <p><b>Luxury Tours and Adventures:</b>Exclusive tours and adventures that offer unparalleled luxury and unforgettable experiences.</p>
+                <p><b>Corporate Travel Solutions:</b>Comprehensive travel solutions for businesses, ensuring efficiency and convenience.</p>
+                <p><b>Sustainable Travel Options:</b>Eco-friendly travel options that promote responsible tourism and sustainability.</p>
+                
+                <br>
+                <a id="Explore_Bluejay"  href="https://bluejay-travels.com/">Explore More</a>
             </div>
         </div>
     </div>
@@ -334,7 +358,7 @@
                 <img src="./src/images/heaven const..jpg" alt="Image" class="responsive-image">
             </div>
             <div class="right-side">
-                <h2 style="font-family: 'Times New Roman', Times, serif;">Heaven Constructions</h2>
+                <h2>Heaven Constructions</h2>
                 <h3>Subsidiary of SHARDA TRAVEL</h3>
                 <p>Heaven Constructions stands as a leading entity in the construction sector, known for its innovative approach and commitment to sustainable building practices. As an integral part of the Sharda Travel family, Heaven Constructions leverages cutting-edge technology and expert craftsmanship to deliver superior construction projects that meet the highest standards of quality.</p>
                 <p><b>Key Services:</b></p>

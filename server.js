@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 // Handle form submissions
 app.post('/submit-feedback', async (req, res) => {
-    let { name, email, message, phone } = req.body;
+    let { name, email, country,countryCode, phone,message } = req.body;
 
     // Create a transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
@@ -38,7 +38,7 @@ app.post('/submit-feedback', async (req, res) => {
         from: email,
         to: 'rajnamaultimate2@gmail.com', // replace with your email address
         subject: `New Feedback from ${name}`,
-        text: `You have received new feedback:\n\nName: ${name}\nEmail: ${email}\n\nFeedback:\n${message} \n\nPhone No.:\n${phone}`,
+        text: `You have received new feedback:\n\nName: ${name}\nEmail: ${email}\n\n Country: ${country}\n\n Code: ${countryCode}\n\nPhone No.:\n${phone}\n\nFeedback:\n${message}`,
     };
 
     try {

@@ -58,9 +58,9 @@ header img {
     text-decoration: none;
 }
 
-.menu li a:hover, .menu li .active {
+/* .menu li a:hover, .menu li .active {
     background-color: #1CABF2;
-}
+} */
 
 .dropdown-content {
     display: none;
@@ -87,7 +87,7 @@ header img {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #1cabf2;
 }
 
 .services_down{
@@ -359,7 +359,7 @@ h2,p{
     height: 40px;
     border-radius: 5px;
     font-size: x-large;
-    color: #eee;
+    color: #000;
     transition: .5s;
 }
 .arrows button:hover{
@@ -397,7 +397,7 @@ h2,p{
 }
 
 .thumbnail .item.active{
-    filter: brightness(1.5);
+    filter: brightness(1.1);
 }
 .thumbnail .item .content{
     position: absolute;
@@ -413,7 +413,13 @@ h2,p{
     }
     .arrows{
         top: 30%;
-    }   
+    }  
+    .slider .list .item img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        /* margin-left: -40px; */
+    }
 }
 
 
@@ -650,22 +656,24 @@ h2,p{
 }
 #nexti{
     position: absolute;
-    right: 50px;
+    right: 15px;
     top: 40%;
+    z-index: 99;
 }
 #previ{
     position: absolute;
-    left: 50px;
+    left: 15px;
     top: 40%;
+    z-index: 99;
 }
 #previ, #nexti{
-    color: red;
+    color: #000;
     background: none;
     border: none;
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
-    opacity: 0.5;
+    opacity: 1;
     transition: opacity 0.5s;
 }
 
@@ -714,8 +722,9 @@ button a{
 /* Smartphones (portrait and landscape) */
 @media only screen and (max-width: 600px) {
     button{
-        padding: 10px 25px 10px 25px;
+        padding: 0 1px 0 1px;
     }
+
    
 }
 
