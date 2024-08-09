@@ -44,6 +44,22 @@ aboutbtn.addEventListener("click",()=>{
     }
 })
 
+const contactbtn=document.querySelector(".contact_down")
+const contactcontent=document.querySelector(".contact-content")
+contactbtn.addEventListener("click",()=>{
+    
+    if (contactcontent.classList.contains("active")){
+        contactcontent.classList.remove("active")
+        contactbtn.classList.add("fa-angle-down")
+        contactbtn.classList.remove("fa-angle-up")
+    }
+    else{
+        contactcontent.classList.add("active")
+        contactbtn.classList.remove("fa-angle-down")
+        contactbtn.classList.add("fa-angle-up")
+    }
+})
+
 
 
 

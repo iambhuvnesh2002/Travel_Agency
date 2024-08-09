@@ -12,8 +12,17 @@ body{
     margin: 0;
     
 }
-
-
+/* Plus button near services , about and cpntact us */
+.arrow{
+    color: #fff;
+    margin: 4px 0px 0px -8px;
+  }
+  @media (max-width: 768px) {
+    .arrow{
+        display: none;
+    }
+}
+/* Header starts */
 header {
     display: flex;
     align-items: center;
@@ -41,6 +50,7 @@ header img {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 20px;
     align-items: center;
     text-shadow: 2px 2px 2px black;
 }
@@ -108,6 +118,16 @@ header img {
 }
 
 .accordian2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1CABF2; */
+    border-radius: 50px;
+    padding-right: 30px;
+
+}
+
+.accordian3{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,6 +208,7 @@ header img {
         top: 60px;
         left: 0;
         background: rgba(0, 0, 0, 0.2);
+        gap: 20px;
     }
 
     .menu li {
@@ -228,6 +249,12 @@ header img {
         padding-right: 0px;
     }
 
+    .contact_down{
+        display: none;
+    }
+    .accordian3{
+        padding-right: 0px;
+    }
     .menu li:hover .dropdown-content {
         display: block;
     }
